@@ -1,0 +1,6 @@
+dist/
+.cache/
+coverage/
+*.json
+.yalc/
+*.md

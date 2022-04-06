@@ -1,0 +1,31 @@
+{
+  "name": "ascii_decode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon --watch 'src/' --exec ts-node src/server.ts -e ts",
+    "build": "tsc",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bergsonjr/ascii_decode.git"
+  },
+  "author": "Bergson Jr.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bergsonjr/ascii_decode/issues"
+  },
+  "homepage": "https://github.com/Bergsonjr/ascii_decode#readme",
+  "devDependencies": {
+    "@types/jest": "^27.4.1",
+    "@types/node": "^17.0.23",
+    "jest": "^27.5.1",
+    "nodemon": "^2.0.15",
+    "ts-jest": "^27.1.4",
+    "ts-node": "^10.7.0",
+    "tslint": "^6.1.3",
+    "typescript": "^4.6.3"
+  }
+}
