@@ -20,8 +20,8 @@
 
 `POST /encode`
 
-    curl --location --request POST 'http://localhost:3000/encode' \ 
-    --header 'Content-Type: application/json' \ 
+    curl --location --request POST 'http://localhost:3000/encode' \
+    --header 'Content-Type: application/json' \
     --data-raw '{"text": "Monetizze"}'
 
 ### Response
