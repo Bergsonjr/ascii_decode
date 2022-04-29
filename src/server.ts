@@ -3,6 +3,7 @@ import * as http from 'http';
 import decode from './controllers/decode';
 import encode from './controllers/encode';
 import convertBufferToJson from './helpers/convertBufferToJson';
+import Logger from './middlewares/logger';
 
 http.createServer(async (request, response) => {
     switch (request.url) {
@@ -56,4 +57,10 @@ http.createServer(async (request, response) => {
             response.end('Route not found');
             break;
     }
+
+    response.on('finish', () => {
+        const { url, method } = request;
+
+        Logger.log(url as string, method as string, response.statusCode);
+    });
 }).listen(3000);
